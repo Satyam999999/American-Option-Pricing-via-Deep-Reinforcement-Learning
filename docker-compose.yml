@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  deep-options:
+    build: .
+    volumes:
+      - ./checkpoints:/app/checkpoints  # Sync weights so they persist
+      - ./experiments:/app/experiments  # Sync config
+    environment:
+      - WANDB_MODE=disabled # Disable W&B for local demo runs
