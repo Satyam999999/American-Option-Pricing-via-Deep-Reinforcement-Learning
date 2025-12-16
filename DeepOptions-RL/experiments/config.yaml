@@ -1,0 +1,24 @@
+simulation:
+  s0: 100.0       # Initial Stock Price
+  k: 100.0        # Strike Price
+  t: 1.0          # Time to Maturity (Years)
+  r: 0.05         # Risk-Free Rate (5%)
+  sigma: 0.1708   # Calibrated S&P 500 Volatility (5-year)
+  n_steps: 52     # Weekly trading steps
+  n_sims: 100000  # Number of paths for validation
+
+agent:
+  type: "DQN"
+  gamma: 0.999
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  learning_rate: 0.001
+  batch_size: 64
+  memory_size: 50000
+  target_update: 50
+
+training:
+  episodes: 3000
+  log_interval: 10
+  checkpoint_dir: "checkpoints/"

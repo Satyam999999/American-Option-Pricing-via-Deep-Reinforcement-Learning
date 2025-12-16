@@ -1,0 +1,25 @@
+simulation:
+  s0: 100.0
+  k: 100.0
+  t: 1.0
+  r: 0.05
+  sigma: 0.1708   # Same calibrated volatility
+  n_steps: 52
+  n_sims: 100000
+
+agent:
+  type: "QRDQN"
+  num_quantiles: 31    # Optimized for stability
+  gamma: 0.999
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.9995 # Slower decay
+  learning_rate: 0.0001 # Lower LR
+  batch_size: 256       # Larger batch
+  memory_size: 100000   # Larger buffer
+  target_update: 1      # Unused (Soft Updates)
+
+training:
+  episodes: 10000      # Longer training
+  log_interval: 100
+  checkpoint_dir: "checkpoints/"

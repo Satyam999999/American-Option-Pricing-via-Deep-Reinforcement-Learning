@@ -1,0 +1,11 @@
+numpy
+pandas
+torch
+gymnasium
+pyyaml
+scipy
+streamlit
+plotly
+wandb
+tqdm
+pytest
