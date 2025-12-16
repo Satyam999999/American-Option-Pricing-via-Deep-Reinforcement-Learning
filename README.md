@@ -34,13 +34,13 @@ The system was calibrated using **5-year historical S&P 500 volatility ($\sigma=
 
 ### 1. Real-Time Trading Engine (Streamlit)
 A "Matrix-style" dashboard that visualizes live market ticks and the agent's decision boundary in real-time.
-![Dashboard Demo](download.jpeg)
+![Dashboard Demo](assets/download.jpeg)
 
 ### 2. Risk Profile (QR-DQN)
 Unlike standard models that output a single price, the Research Agent visualizes the **uncertainty** of holding the option.
 * **Blue Curve:** Variance of returns if HELD.
 * **Red Spike:** Deterministic value if EXERCISED.
-![Risk Profile](qrdqn_risk_profile.png)
+![Risk Profile](assets/qrdqn_risk_profile.png)
 
 ---
 
