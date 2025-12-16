@@ -1,6 +1,5 @@
 # DeepOptions: American Option Pricing via Deep Reinforcement Learning
 
-![CI Status](https://github.com/Satyam999999/DeepOptions-RL/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
@@ -67,15 +66,6 @@ Unlike standard models that output a single price, the Research Agent visualizes
 
 ---
 
-## 💻 Installation
-
-### Option A: Local Installation
-```bash
-# 1. Clone the repository
-git clone [https://github.com/Satyam999999/DeepOptions-RL.git](https://github.com/Satyam999999/DeepOptions-RL.git)
-cd DeepOptions-RL
-
-# 2. Create virtual environment
 conda create -n deep_options python=3.10
 conda activate deep_options
 
